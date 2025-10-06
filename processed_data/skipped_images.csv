@@ -1,0 +1,6 @@
+filename,breed_name,split,reason
+Egyptian_Mau_138,Egyptian_Mau,train,corrupt-invalid
+Abyssinian_5,Abyssinian,val,corrupt-invalid
+Egyptian_Mau_14,Egyptian_Mau,val,corrupt-invalid
+Egyptian_Mau_186,Egyptian_Mau,test,corrupt-invalid
+Egyptian_Mau_156,Egyptian_Mau,test,corrupt-invalid

@@ -1,0 +1,75 @@
+Training Logs - Epoch 3
+==================================================
+Timestamp: 2025-10-05 22:06:00
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251005_210426
+
+TIMING INFORMATION:
+Elapsed Time: 3684.58 seconds (61.41 minutes)
+Epoch Time: 1208.03 seconds
+ETA: 57725.10 seconds (962.09 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 64
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.353163
+binary_accuracy_metric: 0.917300
+precision_metric: 0.925990
+recall_metric: 0.907100
+val_loss: 0.282695
+val_binary_accuracy_metric: 0.910700
+val_precision_metric: 0.903359
+val_recall_metric: 0.919800
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.911089
+val_recall: 0.912000
+val_f1: 0.911544
+val_accuracy: 0.911500
+val_auc: 0.958327
+val_balanced_accuracy: 0.911500
+threshold_score: 0.530000
+threshold: 0.449307
+best_val_f1: 0.921315
+best_val_auc: 0.966985
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.907298
+val_recall_at_fixed: 0.920000
+val_f1_at_fixed: 0.913605
+val_accuracy_at_fixed: 0.913000
+val_threshold_fixed: 0.500000
+val_ap: 0.949804
+val_recall_at_p80: 0.973000
+val_precision_at_r90: 0.917515
+val_raw_min: 0.000739
+val_raw_max: 0.999900
+val_raw_spread: 0.999161
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.911295
+val_local_best_threshold: 0.530000
+emb_std: 0.028935
+emb_spread: 0.255050
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 3):
+Best Training Loss: 0.353163
+Best Validation Loss: 0.282695
+Best Validation Accuracy: 0.921000
+Best Validation F1-Score: 0.921315
+Best Validation AUC: 0.966985

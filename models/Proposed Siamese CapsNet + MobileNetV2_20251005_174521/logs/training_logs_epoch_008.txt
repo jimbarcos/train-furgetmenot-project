@@ -1,0 +1,76 @@
+Training Logs - Epoch 8
+==================================================
+Timestamp: 2025-10-05 20:23:48
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251005_174521
+
+TIMING INFORMATION:
+Elapsed Time: 9490.74 seconds (158.18 minutes)
+Epoch Time: 1172.76 seconds
+ETA: 49826.37 seconds (830.44 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 128
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.251749
+binary_accuracy_metric: 0.682050
+precision_metric: 0.884477
+recall_metric: 0.418800
+val_loss: 0.225678
+val_binary_accuracy_metric: 0.836900
+val_precision_metric: 0.763574
+val_recall_metric: 0.976000
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.876482
+val_recall: 0.887000
+val_f1: 0.881710
+val_accuracy: 0.881000
+val_auc: 0.933733
+val_balanced_accuracy: 0.881000
+threshold_score: 0.910000
+threshold: 0.156705
+best_val_f1: 0.899851
+best_val_auc: 0.945043
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.765306
+val_recall_at_fixed: 0.975000
+val_f1_at_fixed: 0.857520
+val_accuracy_at_fixed: 0.838000
+val_threshold_fixed: 0.500000
+val_ap: 0.912400
+val_recall_at_p80: 0.969000
+val_precision_at_r90: 0.871249
+val_raw_min: 0.000100
+val_raw_max: 0.999900
+val_raw_spread: 0.999800
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.878957
+val_local_best_threshold: 0.910000
+emb_std: 0.044984
+emb_spread: 0.425817
+noise_std: 0.025000
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 8):
+Best Training Loss: 0.251749
+Best Validation Loss: 0.225678
+Best Validation Accuracy: 0.899500
+Best Validation F1-Score: 0.899851
+Best Validation AUC: 0.945043

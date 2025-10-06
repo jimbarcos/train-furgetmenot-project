@@ -1,0 +1,74 @@
+Training Logs - Epoch 4
+==================================================
+Timestamp: 2025-10-06 04:56:27
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251006_033126
+
+TIMING INFORMATION:
+Elapsed Time: 5092.76 seconds (84.88 minutes)
+Epoch Time: 1264.65 seconds
+ETA: 58566.77 seconds (976.11 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 32
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.100971
+binary_accuracy_metric: 0.941850
+precision_metric: 0.938300
+recall_metric: 0.945900
+val_loss: 0.084155
+val_binary_accuracy_metric: 0.928600
+val_precision_metric: 0.903882
+val_recall_metric: 0.959200
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.935065
+val_recall: 0.936000
+val_f1: 0.935532
+val_accuracy: 0.935500
+val_auc: 0.976434
+val_balanced_accuracy: 0.935500
+threshold_score: 0.610000
+threshold: 0.400959
+best_val_f1: 0.938653
+best_val_auc: 0.976434
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.918738
+val_recall_at_fixed: 0.961000
+val_f1_at_fixed: 0.939394
+val_accuracy_at_fixed: 0.938000
+val_threshold_fixed: 0.500000
+val_ap: 0.968988
+val_recall_at_p80: 0.991000
+val_precision_at_r90: 0.947368
+val_raw_min: 0.001044
+val_raw_max: 0.999900
+val_raw_spread: 0.998856
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.935270
+val_local_best_threshold: 0.610000
+emb_std: 0.020117
+emb_spread: 0.158593
+
+HISTORICAL SUMMARY (up to epoch 4):
+Best Training Loss: 0.100971
+Best Validation Loss: 0.084155
+Best Validation Accuracy: 0.938500
+Best Validation F1-Score: 0.938653
+Best Validation AUC: 0.976434

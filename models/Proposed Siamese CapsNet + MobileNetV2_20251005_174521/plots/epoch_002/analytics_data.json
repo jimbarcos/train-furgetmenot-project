@@ -1,0 +1,65 @@
+{
+  "epoch": 2,
+  "timestamp": "2025-10-05T18:24:42.210863",
+  "training_data": {
+    "epochs": [
+      1,
+      2
+    ],
+    "loss": [
+      1.4361586570739746,
+      1.1056065559387207
+    ],
+    "val_loss": [
+      1.2562155723571777,
+      0.9753202199935913
+    ],
+    "accuracy": [
+      0.6182500123977661,
+      0.7752000093460083
+    ],
+    "val_accuracy": [
+      0.832,
+      0.8685
+    ],
+    "precision": [
+      0.5950333476066589,
+      0.8101893663406372
+    ],
+    "val_precision": [
+      0.8293650793650794,
+      0.8616290480863592
+    ],
+    "recall": [
+      0.7404000163078308,
+      0.7188000082969666
+    ],
+    "val_recall": [
+      0.836,
+      0.878
+    ],
+    "f1_score": [
+      0.6598048377063901,
+      0.7617634616682368
+    ],
+    "val_f1_score": [
+      0.8326693227091634,
+      0.8697374938088163
+    ],
+    "val_auc": [
+      0.9044969999999999,
+      0.9282105
+    ],
+    "learning_rate": []
+  },
+  "training_params": {
+    "epochs": 50,
+    "batch_size": 128,
+    "learning_rate": 5e-05,
+    "patience": 7
+  },
+  "model_info": {
+    "model_name": "Proposed Siamese CapsNet + MobileNetV2",
+    "session_id": "Proposed Siamese CapsNet + MobileNetV2_20251005_174521"
+  }
+}

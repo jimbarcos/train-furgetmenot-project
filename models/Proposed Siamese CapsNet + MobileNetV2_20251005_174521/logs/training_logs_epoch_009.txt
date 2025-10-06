@@ -1,0 +1,76 @@
+Training Logs - Epoch 9
+==================================================
+Timestamp: 2025-10-05 20:44:18
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251005_174521
+
+TIMING INFORMATION:
+Elapsed Time: 10722.99 seconds (178.72 minutes)
+Epoch Time: 1225.47 seconds
+ETA: 48849.17 seconds (814.15 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 128
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.196045
+binary_accuracy_metric: 0.637600
+precision_metric: 0.872900
+recall_metric: 0.322100
+val_loss: 0.177255
+val_binary_accuracy_metric: 0.801200
+val_precision_metric: 0.721471
+val_recall_metric: 0.981200
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.859195
+val_recall: 0.897000
+val_f1: 0.877691
+val_accuracy: 0.875000
+val_auc: 0.924998
+val_balanced_accuracy: 0.875000
+threshold_score: 0.890000
+threshold: 0.138054
+best_val_f1: 0.899851
+best_val_auc: 0.945043
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.733383
+val_recall_at_fixed: 0.982000
+val_f1_at_fixed: 0.839675
+val_accuracy_at_fixed: 0.812500
+val_threshold_fixed: 0.500000
+val_ap: 0.887983
+val_recall_at_p80: 0.961000
+val_precision_at_r90: 0.857960
+val_raw_min: 0.000100
+val_raw_max: 0.999900
+val_raw_spread: 0.999800
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.868099
+val_local_best_threshold: 0.890000
+emb_std: 0.039178
+emb_spread: 0.378435
+noise_std: 0.020000
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 9):
+Best Training Loss: 0.196045
+Best Validation Loss: 0.177255
+Best Validation Accuracy: 0.899500
+Best Validation F1-Score: 0.899851
+Best Validation AUC: 0.945043

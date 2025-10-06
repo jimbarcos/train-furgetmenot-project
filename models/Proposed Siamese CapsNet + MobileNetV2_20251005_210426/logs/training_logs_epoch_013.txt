@@ -1,0 +1,80 @@
+Training Logs - Epoch 13
+==================================================
+Timestamp: 2025-10-06 01:24:26
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251005_210426
+
+TIMING INFORMATION:
+Elapsed Time: 15591.01 seconds (259.85 minutes)
+Epoch Time: 1187.92 seconds
+ETA: 44374.42 seconds (739.57 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 64
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.011068
+binary_accuracy_metric: 0.963600
+precision_metric: 0.963786
+recall_metric: 0.963400
+val_loss: 0.014936
+val_binary_accuracy_metric: 0.911300
+val_precision_metric: 0.888826
+val_recall_metric: 0.940200
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.922078
+val_recall: 0.923000
+val_f1: 0.922539
+val_accuracy: 0.922500
+val_auc: 0.963261
+val_balanced_accuracy: 0.922500
+threshold_score: 0.650000
+threshold: 0.348641
+best_val_f1: 0.944167
+best_val_auc: 0.979895
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.892351
+val_recall_at_fixed: 0.945000
+val_f1_at_fixed: 0.917921
+val_accuracy_at_fixed: 0.915500
+val_threshold_fixed: 0.500000
+val_precision_at_frozen: 0.922144
+val_recall_at_frozen: 0.912000
+val_f1_at_frozen: 0.917044
+val_accuracy_at_frozen: 0.917500
+val_threshold_frozen: 0.670000
+val_ap: 0.952795
+val_recall_at_p80: 0.982000
+val_precision_at_r90: 0.929752
+val_raw_min: 0.000349
+val_raw_max: 0.999900
+val_raw_spread: 0.999551
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.922284
+val_local_best_threshold: 0.650000
+emb_std: 0.017031
+emb_spread: 0.149751
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 13):
+Best Training Loss: 0.011068
+Best Validation Loss: 0.014936
+Best Validation Accuracy: 0.944000
+Best Validation F1-Score: 0.944167
+Best Validation AUC: 0.979895

@@ -1,0 +1,79 @@
+Training Logs - Epoch 10
+==================================================
+Timestamp: 2025-10-06 00:24:56
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251005_210426
+
+TIMING INFORMATION:
+Elapsed Time: 12021.39 seconds (200.36 minutes)
+Epoch Time: 1194.45 seconds
+ETA: 48085.54 seconds (801.43 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 64
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.020064
+binary_accuracy_metric: 0.961500
+precision_metric: 0.959936
+recall_metric: 0.963200
+val_loss: 0.021942
+val_binary_accuracy_metric: 0.920500
+val_precision_metric: 0.885851
+val_recall_metric: 0.965400
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.941352
+val_recall: 0.947000
+val_f1: 0.944167
+val_accuracy: 0.944000
+val_auc: 0.979895
+val_balanced_accuracy: 0.944000
+threshold_score: 0.670000
+threshold: 0.347487
+best_val_f1: 0.944167
+best_val_auc: 0.979895
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.907907
+val_recall_at_fixed: 0.976000
+val_f1_at_fixed: 0.940723
+val_accuracy_at_fixed: 0.938500
+val_threshold_fixed: 0.500000
+val_precision_at_frozen: 0.941352
+val_recall_at_frozen: 0.947000
+val_f1_at_frozen: 0.944167
+val_accuracy_at_frozen: 0.944000
+val_threshold_frozen: 0.670000
+val_ap: 0.974786
+val_recall_at_p80: 0.992000
+val_precision_at_r90: 0.951731
+val_raw_min: 0.000250
+val_raw_max: 0.999900
+val_raw_spread: 0.999650
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.942577
+val_local_best_threshold: 0.670000
+emb_std: 0.017025
+emb_spread: 0.132012
+
+HISTORICAL SUMMARY (up to epoch 10):
+Best Training Loss: 0.020064
+Best Validation Loss: 0.021942
+Best Validation Accuracy: 0.944000
+Best Validation F1-Score: 0.944167
+Best Validation AUC: 0.979895

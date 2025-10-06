@@ -1,0 +1,75 @@
+Training Logs - Epoch 5
+==================================================
+Timestamp: 2025-10-06 05:17:40
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251006_033126
+
+TIMING INFORMATION:
+Elapsed Time: 6363.12 seconds (106.05 minutes)
+Epoch Time: 1265.00 seconds
+ETA: 57268.06 seconds (954.47 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 32
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.060521
+binary_accuracy_metric: 0.947800
+precision_metric: 0.943542
+recall_metric: 0.952600
+val_loss: 0.056690
+val_binary_accuracy_metric: 0.920100
+val_precision_metric: 0.891519
+val_recall_metric: 0.956600
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.941709
+val_recall: 0.937000
+val_f1: 0.939348
+val_accuracy: 0.939500
+val_auc: 0.974726
+val_balanced_accuracy: 0.939500
+threshold_score: 0.630000
+threshold: 0.388705
+best_val_f1: 0.939348
+best_val_auc: 0.976434
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.901223
+val_recall_at_fixed: 0.958000
+val_f1_at_fixed: 0.928745
+val_accuracy_at_fixed: 0.926500
+val_threshold_fixed: 0.500000
+val_ap: 0.961127
+val_recall_at_p80: 0.989000
+val_precision_at_r90: 0.949686
+val_raw_min: 0.000574
+val_raw_max: 0.999900
+val_raw_spread: 0.999326
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.938028
+val_local_best_threshold: 0.630000
+emb_std: 0.019603
+emb_spread: 0.157308
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 5):
+Best Training Loss: 0.060521
+Best Validation Loss: 0.056690
+Best Validation Accuracy: 0.939500
+Best Validation F1-Score: 0.939348
+Best Validation AUC: 0.976434

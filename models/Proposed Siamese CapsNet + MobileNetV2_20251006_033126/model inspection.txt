@@ -1,0 +1,585 @@
+python inspect_model_config.py
+2025-10-06 10:47:51.919340: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\Jim Aerol\OneDrive\Desktop\Python 3.11.9\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.   
+
+Auto-detected model: models\Proposed Siamese CapsNet + MobileNetV2_20251006_033126\models\final_best_model.keras
+================================================================================
+SIAMESE CAPSULE NETWORK - MODEL CONFIGURATION INSPECTOR        
+================================================================================
+
+Model File: models\Proposed Siamese CapsNet + MobileNetV2_20251006_033126\models\final_best_model.keras
+File Size:  29.70 MB
+
+⏳ Loading model...
+WARNING:tensorflow:From C:\Users\Jim Aerol\OneDrive\Desktop\Python 3.11.9\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.  
+
+2025-10-06 10:47:58.987913: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.   
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+⚠️  Load with custom objects failed: Requested the deserializattion of a Lambda layer with a Python `lambda` inside it. This carries a potential risk of arbitrary code execution and thus it is disallowed by default. If you trust the source of the saved model, you can pass `safe_mode=False` to the loading function in order to allow Lambda layer loading.
+
+⏳ Attempting load with safe_mode=False...
+WARNING:tensorflow:From C:\Users\Jim Aerol\OneDrive\Desktop\Python 3.11.9\Lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.  
+
+✓ Model loaded successfully (with safe_mode=False)
+
+================================================================================
+MODEL ARCHITECTURE ANALYSIS
+================================================================================
+
+------------------------------Parameter Statistics------------------------------
+Total Parameters:        3,242,585
+Trainable Parameters:    2,190,489 (67.6%)
+Non-trainable Parameters:1,052,096 (32.4%)
+
+----------------------------Model I/O Configuration-----------------------------
+Number of Inputs: 2
+  Input 1: input_anchor                   Shape: (None, 224, 224, 3)
+  Input 2: input_positive                 Shape: (None, 224, 224, 3)
+
+Number of Outputs: 1
+  Output 1: distance/Mean:0                Shape: (None, 1)    
+
+--------------------------------Layer Breakdown---------------------------------
+Total Layers: 5
+
+Layer Type Distribution:
+  InputLayer                     :   2 layers
+  Lambda                         :   2 layers
+  Functional                     :   1 layers
+
+--------------------------Detailed Layer Configuration--------------------------
+#    Layer Name                          Type                  
+    Output Shape         Params
+--------------------------------------------------------------------------------
+0    input_anchor                        InputLayer            
+    [(None, 224, 224, 3  0
+1    input_positive                      InputLayer            
+    [(None, 224, 224, 3  0
+2    MobileNetV2_CapsNet_Hybrid          Functional            
+    [(None, 6, 8), (Non  3,242,585
+3    cosine_distance                     Lambda                
+    (None, 1)            0
+4    distance                            Lambda                
+    (None, 1)            0
+
+================================================================================
+CUSTOM COMPONENTS
+================================================================================
+
+Custom Layers Found (1):
+  • Functional                     : MobileNetV2_CapsNet_Hybrid
+
+Lambda Layers Found (2):
+  • cosine_distance
+  • distance
+
+⚠️  Note: Lambda layers may require custom_objects when loadingg the model
+
+================================================================================
+TRANSFER LEARNING ANALYSIS
+================================================================================
+
+Pre-trained Backbone(s) Detected:
+  • MOBILENET
+
+Layer Training Status:
+  Trainable Layers:        5 (100.0%)
+  Frozen Layers:           0 (0.0%)
+
+⚡ Full Fine-tuning: All layers are trainable
+
+================================================================================
+OPTIMIZER CONFIGURATION
+================================================================================
+⚠️  Model not compiled - no optimizer information available    
+
+================================================================================
+LOSS & METRICS CONFIGURATION
+================================================================================
+⚠️  Model not compiled - no loss/metrics information available 
+
+================================================================================
+INFERENCE CHARACTERISTICS
+================================================================================
+
+Model Size:
+  Parameters:           3,242,585
+  Estimated Memory:     12.37 MB (float32)
+  Estimated Memory:     6.18 MB (float16/mixed precision)      
+
+================================================================================
+TRAINING HYPERPARAMETERS (from logs)
+================================================================================
+
+Training Configuration:
+  epochs                   : 50
+  batch_size               : 32
+  learning_rate            : 5e-05
+  patience                 : 7
+
+Model Metadata:
+  model_name               : Proposed Siamese CapsNet + MobileNetV2
+  session_id               : Proposed Siamese CapsNet + MobileNetV2_20251006_033126
+
+Training Progress:
+  Total Epochs Run:     14
+  Last Epoch:           14
+  Best Val AUC:         0.9804 (Epoch 7)
+  [03:31:18] Reloading data generators with current batch size...
+  [03:31:29] Batch sizes - Train: 32, Val: 16
+================================================================================
+✓ INSPECTION COMPLETE
+================================================================================
+
+📊 KEY TAKEAWAYS:
+  • Lightweight model - suitable for mobile/edge deployment
+
+💾 MODEL FORMAT:
+  • Format: Keras v3 (.keras)
+  • ✓ Recommended for TensorFlow 2.13+
+  • ✓ Better compatibility with modern TF features
+  • ✓ Single file, easier deployment                  python inspect_model_config.py --show-weights
+2025-10-06 10:51:20.737143: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.    
+WARNING:tensorflow:From C:\Users\Jim Aerol\OneDrive\Desktop\Python 3.11.9\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Auto-detected model: models\Proposed Siamese CapsNet + MobileNetV2_20251006_033126\models\final_best_model.keras
+================================================================================
+SIAMESE CAPSULE NETWORK - MODEL CONFIGURATION INSPECTOR
+================================================================================
+
+Model File: models\Proposed Siamese CapsNet + MobileNetV2_20251006_033126\models\final_best_model.keras
+File Size:  29.70 MB
+
+⏳ Loading model...
+WARNING:tensorflow:From C:\Users\Jim Aerol\OneDrive\Desktop\Python 3.11.9\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-06 10:51:27.867160: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+⚠️  Load with custom objects failed: Requested the deserialization of a Lambda layer with a Python  `lambda` inside it. This carries a potential risk of arbitrary code execution and thus it is disallowed by default. If you trust the source of the saved model, you can pass `safe_mode=False` to the loading function in order to allow Lambda layer loading.
+
+⏳ Attempting load with safe_mode=False...
+WARNING:tensorflow:From C:\Users\Jim Aerol\OneDrive\Desktop\Python 3.11.9\Lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+✓ Model loaded successfully (with safe_mode=False)
+
+================================================================================
+MODEL ARCHITECTURE ANALYSIS
+================================================================================
+
+------------------------------Parameter Statistics------------------------------
+Total Parameters:        3,242,585
+Trainable Parameters:    2,190,489 (67.6%)
+Non-trainable Parameters:1,052,096 (32.4%)
+
+----------------------------Model I/O Configuration-----------------------------
+Number of Inputs: 2
+  Input 1: input_anchor                   Shape: (None, 224, 224, 3)
+  Input 2: input_positive                 Shape: (None, 224, 224, 3)
+
+Number of Outputs: 1
+  Output 1: distance/Mean:0                Shape: (None, 1)
+
+--------------------------------Layer Breakdown---------------------------------
+Total Layers: 5
+
+Layer Type Distribution:
+  InputLayer                     :   2 layers
+  Lambda                         :   2 layers
+  Functional                     :   1 layers
+
+--------------------------Detailed Layer Configuration--------------------------
+#    Layer Name                          Type                      Output Shape         Params     
+
+--------------------------------------------------------------------------------
+0    input_anchor                        InputLayer                [(None, 224, 224, 3  0          
+
+1    input_positive                      InputLayer                [(None, 224, 224, 3  0          
+
+2    MobileNetV2_CapsNet_Hybrid          Functional                [(None, 6, 8), (Non  3,242,585  
+
+3    cosine_distance                     Lambda                    (None, 1)            0          
+
+4    distance                            Lambda                    (None, 1)            0          
+
+
+================================================================================
+CUSTOM COMPONENTS
+================================================================================
+
+Custom Layers Found (1):
+  • Functional                     : MobileNetV2_CapsNet_Hybrid
+
+Lambda Layers Found (2):
+  • cosine_distance
+  • distance
+
+⚠️  Note: Lambda layers may require custom_objects when loading the model
+
+================================================================================
+TRANSFER LEARNING ANALYSIS
+================================================================================
+
+Pre-trained Backbone(s) Detected:
+  • MOBILENET
+
+Layer Training Status:
+  Trainable Layers:        5 (100.0%)
+  Frozen Layers:           0 (0.0%)
+
+⚡ Full Fine-tuning: All layers are trainable
+
+================================================================================
+OPTIMIZER CONFIGURATION
+================================================================================
+⚠️  Model not compiled - no optimizer information available
+
+================================================================================
+LOSS & METRICS CONFIGURATION
+================================================================================
+⚠️  Model not compiled - no loss/metrics information available
+
+================================================================================
+INFERENCE CHARACTERISTICS
+================================================================================
+
+Model Size:
+  Parameters:           3,242,585
+  Estimated Memory:     12.37 MB (float32)
+  Estimated Memory:     6.18 MB (float16/mixed precision)
+
+================================================================================
+TRAINING HYPERPARAMETERS (from logs)
+================================================================================
+
+Training Configuration:
+  epochs                   : 50
+  batch_size               : 32
+  learning_rate            : 5e-05
+  patience                 : 7
+
+Model Metadata:
+  model_name               : Proposed Siamese CapsNet + MobileNetV2
+  session_id               : Proposed Siamese CapsNet + MobileNetV2_20251006_033126
+
+Training Progress:
+  Total Epochs Run:     14
+  Last Epoch:           14
+  Best Val AUC:         0.9804 (Epoch 7)
+  [03:31:18] Reloading data generators with current batch size...
+  [03:31:29] Batch sizes - Train: 32, Val: 16
+  [03:31:29] Training with learning rate: 5.00e-05
+
+================================================================================
+WEIGHT TENSORS
+================================================================================
+
+Layer Name                               Weight Name                    Shape
+--------------------------------------------------------------------------------
+MobileNetV2_CapsNet_Hybrid               Conv1/kernel:0                 (3, 3, 3, 32)
+MobileNetV2_CapsNet_Hybrid               bn_Conv1/gamma:0               (32,)
+MobileNetV2_CapsNet_Hybrid               bn_Conv1/beta:0                (32,)
+MobileNetV2_CapsNet_Hybrid               bn_Conv1/moving_mean:0         (32,)
+MobileNetV2_CapsNet_Hybrid               bn_Conv1/moving_variance:0     (32,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_depthwise/depth  (3, 3, 32, 1)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_depthwise_BN/ga  (32,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_depthwise_BN/be  (32,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_depthwise_BN/mo  (32,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_depthwise_BN/mo  (32,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_project/kernel:  (1, 1, 32, 16)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_project_BN/gamm  (16,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_project_BN/beta  (16,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_project_BN/movi  (16,)
+MobileNetV2_CapsNet_Hybrid               expanded_conv_project_BN/movi  (16,)
+MobileNetV2_CapsNet_Hybrid               block_1_expand/kernel:0        (1, 1, 16, 96)
+MobileNetV2_CapsNet_Hybrid               block_1_expand_BN/gamma:0      (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_expand_BN/beta:0       (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_expand_BN/moving_mean  (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_expand_BN/moving_vari  (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_depthwise/depthwise_k  (3, 3, 96, 1)
+MobileNetV2_CapsNet_Hybrid               block_1_depthwise_BN/gamma:0   (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_depthwise_BN/beta:0    (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_depthwise_BN/moving_m  (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_depthwise_BN/moving_v  (96,)
+MobileNetV2_CapsNet_Hybrid               block_1_project/kernel:0       (1, 1, 96, 24)
+MobileNetV2_CapsNet_Hybrid               block_1_project_BN/gamma:0     (24,)
+MobileNetV2_CapsNet_Hybrid               block_1_project_BN/beta:0      (24,)
+MobileNetV2_CapsNet_Hybrid               block_1_project_BN/moving_mea  (24,)
+MobileNetV2_CapsNet_Hybrid               block_1_project_BN/moving_var  (24,)
+MobileNetV2_CapsNet_Hybrid               block_2_expand/kernel:0        (1, 1, 24, 144)
+MobileNetV2_CapsNet_Hybrid               block_2_expand_BN/gamma:0      (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_expand_BN/beta:0       (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_expand_BN/moving_mean  (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_expand_BN/moving_vari  (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_depthwise/depthwise_k  (3, 3, 144, 1)
+MobileNetV2_CapsNet_Hybrid               block_2_depthwise_BN/gamma:0   (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_depthwise_BN/beta:0    (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_depthwise_BN/moving_m  (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_depthwise_BN/moving_v  (144,)
+MobileNetV2_CapsNet_Hybrid               block_2_project/kernel:0       (1, 1, 144, 24)
+MobileNetV2_CapsNet_Hybrid               block_2_project_BN/gamma:0     (24,)
+MobileNetV2_CapsNet_Hybrid               block_2_project_BN/beta:0      (24,)
+MobileNetV2_CapsNet_Hybrid               block_2_project_BN/moving_mea  (24,)
+MobileNetV2_CapsNet_Hybrid               block_2_project_BN/moving_var  (24,)
+MobileNetV2_CapsNet_Hybrid               block_3_expand/kernel:0        (1, 1, 24, 144)
+MobileNetV2_CapsNet_Hybrid               block_3_expand_BN/gamma:0      (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_expand_BN/beta:0       (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_expand_BN/moving_mean  (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_expand_BN/moving_vari  (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_depthwise/depthwise_k  (3, 3, 144, 1)
+MobileNetV2_CapsNet_Hybrid               block_3_depthwise_BN/gamma:0   (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_depthwise_BN/beta:0    (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_depthwise_BN/moving_m  (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_depthwise_BN/moving_v  (144,)
+MobileNetV2_CapsNet_Hybrid               block_3_project/kernel:0       (1, 1, 144, 32)
+MobileNetV2_CapsNet_Hybrid               block_3_project_BN/gamma:0     (32,)
+MobileNetV2_CapsNet_Hybrid               block_3_project_BN/beta:0      (32,)
+MobileNetV2_CapsNet_Hybrid               block_3_project_BN/moving_mea  (32,)
+MobileNetV2_CapsNet_Hybrid               block_3_project_BN/moving_var  (32,)
+MobileNetV2_CapsNet_Hybrid               block_4_expand/kernel:0        (1, 1, 32, 192)
+MobileNetV2_CapsNet_Hybrid               block_4_expand_BN/gamma:0      (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_expand_BN/beta:0       (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_expand_BN/moving_mean  (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_expand_BN/moving_vari  (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_depthwise/depthwise_k  (3, 3, 192, 1)
+MobileNetV2_CapsNet_Hybrid               block_4_depthwise_BN/gamma:0   (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_depthwise_BN/beta:0    (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_depthwise_BN/moving_m  (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_depthwise_BN/moving_v  (192,)
+MobileNetV2_CapsNet_Hybrid               block_4_project/kernel:0       (1, 1, 192, 32)
+MobileNetV2_CapsNet_Hybrid               block_4_project_BN/gamma:0     (32,)
+MobileNetV2_CapsNet_Hybrid               block_4_project_BN/beta:0      (32,)
+MobileNetV2_CapsNet_Hybrid               block_4_project_BN/moving_mea  (32,)
+MobileNetV2_CapsNet_Hybrid               block_4_project_BN/moving_var  (32,)
+MobileNetV2_CapsNet_Hybrid               block_5_expand/kernel:0        (1, 1, 32, 192)
+MobileNetV2_CapsNet_Hybrid               block_5_expand_BN/gamma:0      (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_expand_BN/beta:0       (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_expand_BN/moving_mean  (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_expand_BN/moving_vari  (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_depthwise/depthwise_k  (3, 3, 192, 1)
+MobileNetV2_CapsNet_Hybrid               block_5_depthwise_BN/gamma:0   (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_depthwise_BN/beta:0    (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_depthwise_BN/moving_m  (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_depthwise_BN/moving_v  (192,)
+MobileNetV2_CapsNet_Hybrid               block_5_project/kernel:0       (1, 1, 192, 32)
+MobileNetV2_CapsNet_Hybrid               block_5_project_BN/gamma:0     (32,)
+MobileNetV2_CapsNet_Hybrid               block_5_project_BN/beta:0      (32,)
+MobileNetV2_CapsNet_Hybrid               block_5_project_BN/moving_mea  (32,)
+MobileNetV2_CapsNet_Hybrid               block_5_project_BN/moving_var  (32,)
+MobileNetV2_CapsNet_Hybrid               block_6_expand/kernel:0        (1, 1, 32, 192)
+MobileNetV2_CapsNet_Hybrid               block_6_expand_BN/gamma:0      (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_expand_BN/beta:0       (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_expand_BN/moving_mean  (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_expand_BN/moving_vari  (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_depthwise/depthwise_k  (3, 3, 192, 1)
+MobileNetV2_CapsNet_Hybrid               block_6_depthwise_BN/gamma:0   (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_depthwise_BN/beta:0    (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_depthwise_BN/moving_m  (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_depthwise_BN/moving_v  (192,)
+MobileNetV2_CapsNet_Hybrid               block_6_project/kernel:0       (1, 1, 192, 64)
+MobileNetV2_CapsNet_Hybrid               block_6_project_BN/gamma:0     (64,)
+MobileNetV2_CapsNet_Hybrid               block_6_project_BN/beta:0      (64,)
+MobileNetV2_CapsNet_Hybrid               block_6_project_BN/moving_mea  (64,)
+MobileNetV2_CapsNet_Hybrid               block_6_project_BN/moving_var  (64,)
+MobileNetV2_CapsNet_Hybrid               block_7_expand/kernel:0        (1, 1, 64, 384)
+MobileNetV2_CapsNet_Hybrid               block_7_expand_BN/gamma:0      (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_expand_BN/beta:0       (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_expand_BN/moving_mean  (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_expand_BN/moving_vari  (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_depthwise/depthwise_k  (3, 3, 384, 1)
+MobileNetV2_CapsNet_Hybrid               block_7_depthwise_BN/gamma:0   (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_depthwise_BN/beta:0    (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_depthwise_BN/moving_m  (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_depthwise_BN/moving_v  (384,)
+MobileNetV2_CapsNet_Hybrid               block_7_project/kernel:0       (1, 1, 384, 64)
+MobileNetV2_CapsNet_Hybrid               block_7_project_BN/gamma:0     (64,)
+MobileNetV2_CapsNet_Hybrid               block_7_project_BN/beta:0      (64,)
+MobileNetV2_CapsNet_Hybrid               block_7_project_BN/moving_mea  (64,)
+MobileNetV2_CapsNet_Hybrid               block_7_project_BN/moving_var  (64,)
+MobileNetV2_CapsNet_Hybrid               block_8_expand/kernel:0        (1, 1, 64, 384)
+MobileNetV2_CapsNet_Hybrid               block_8_expand_BN/gamma:0      (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_expand_BN/beta:0       (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_expand_BN/moving_mean  (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_expand_BN/moving_vari  (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_depthwise/depthwise_k  (3, 3, 384, 1)
+MobileNetV2_CapsNet_Hybrid               block_8_depthwise_BN/gamma:0   (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_depthwise_BN/beta:0    (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_depthwise_BN/moving_m  (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_depthwise_BN/moving_v  (384,)
+MobileNetV2_CapsNet_Hybrid               block_8_project/kernel:0       (1, 1, 384, 64)
+MobileNetV2_CapsNet_Hybrid               block_8_project_BN/gamma:0     (64,)
+MobileNetV2_CapsNet_Hybrid               block_8_project_BN/beta:0      (64,)
+MobileNetV2_CapsNet_Hybrid               block_8_project_BN/moving_mea  (64,)
+MobileNetV2_CapsNet_Hybrid               block_8_project_BN/moving_var  (64,)
+MobileNetV2_CapsNet_Hybrid               block_9_expand/kernel:0        (1, 1, 64, 384)
+MobileNetV2_CapsNet_Hybrid               block_9_expand_BN/gamma:0      (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_expand_BN/beta:0       (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_expand_BN/moving_mean  (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_expand_BN/moving_vari  (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_depthwise/depthwise_k  (3, 3, 384, 1)
+MobileNetV2_CapsNet_Hybrid               block_9_depthwise_BN/gamma:0   (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_depthwise_BN/beta:0    (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_depthwise_BN/moving_m  (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_depthwise_BN/moving_v  (384,)
+MobileNetV2_CapsNet_Hybrid               block_9_project/kernel:0       (1, 1, 384, 64)
+MobileNetV2_CapsNet_Hybrid               block_9_project_BN/gamma:0     (64,)
+MobileNetV2_CapsNet_Hybrid               block_9_project_BN/beta:0      (64,)
+MobileNetV2_CapsNet_Hybrid               block_9_project_BN/moving_mea  (64,)
+MobileNetV2_CapsNet_Hybrid               block_9_project_BN/moving_var  (64,)
+MobileNetV2_CapsNet_Hybrid               block_10_expand/kernel:0       (1, 1, 64, 384)
+MobileNetV2_CapsNet_Hybrid               block_10_expand_BN/gamma:0     (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_expand_BN/beta:0      (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_expand_BN/moving_mea  (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_expand_BN/moving_var  (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_depthwise/depthwise_  (3, 3, 384, 1)
+MobileNetV2_CapsNet_Hybrid               block_10_depthwise_BN/gamma:0  (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_depthwise_BN/beta:0   (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_depthwise_BN/moving_  (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_depthwise_BN/moving_  (384,)
+MobileNetV2_CapsNet_Hybrid               block_10_project/kernel:0      (1, 1, 384, 96)
+MobileNetV2_CapsNet_Hybrid               block_10_project_BN/gamma:0    (96,)
+MobileNetV2_CapsNet_Hybrid               block_10_project_BN/beta:0     (96,)
+MobileNetV2_CapsNet_Hybrid               block_10_project_BN/moving_me  (96,)
+MobileNetV2_CapsNet_Hybrid               block_10_project_BN/moving_va  (96,)
+MobileNetV2_CapsNet_Hybrid               block_11_expand/kernel:0       (1, 1, 96, 576)
+MobileNetV2_CapsNet_Hybrid               block_11_expand_BN/gamma:0     (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_expand_BN/beta:0      (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_expand_BN/moving_mea  (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_expand_BN/moving_var  (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_depthwise/depthwise_  (3, 3, 576, 1)
+MobileNetV2_CapsNet_Hybrid               block_11_depthwise_BN/gamma:0  (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_depthwise_BN/beta:0   (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_depthwise_BN/moving_  (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_depthwise_BN/moving_  (576,)
+MobileNetV2_CapsNet_Hybrid               block_11_project/kernel:0      (1, 1, 576, 96)
+MobileNetV2_CapsNet_Hybrid               block_11_project_BN/gamma:0    (96,)
+MobileNetV2_CapsNet_Hybrid               block_11_project_BN/beta:0     (96,)
+MobileNetV2_CapsNet_Hybrid               block_11_project_BN/moving_me  (96,)
+MobileNetV2_CapsNet_Hybrid               block_11_project_BN/moving_va  (96,)
+MobileNetV2_CapsNet_Hybrid               block_12_expand/kernel:0       (1, 1, 96, 576)
+MobileNetV2_CapsNet_Hybrid               block_12_expand_BN/gamma:0     (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_expand_BN/beta:0      (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_expand_BN/moving_mea  (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_expand_BN/moving_var  (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_depthwise/depthwise_  (3, 3, 576, 1)
+MobileNetV2_CapsNet_Hybrid               block_12_depthwise_BN/gamma:0  (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_depthwise_BN/beta:0   (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_depthwise_BN/moving_  (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_depthwise_BN/moving_  (576,)
+MobileNetV2_CapsNet_Hybrid               block_12_project/kernel:0      (1, 1, 576, 96)
+MobileNetV2_CapsNet_Hybrid               block_12_project_BN/gamma:0    (96,)
+MobileNetV2_CapsNet_Hybrid               block_12_project_BN/beta:0     (96,)
+MobileNetV2_CapsNet_Hybrid               block_12_project_BN/moving_me  (96,)
+MobileNetV2_CapsNet_Hybrid               block_12_project_BN/moving_va  (96,)
+MobileNetV2_CapsNet_Hybrid               block_13_expand/kernel:0       (1, 1, 96, 576)
+MobileNetV2_CapsNet_Hybrid               block_13_expand_BN/gamma:0     (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_expand_BN/beta:0      (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_expand_BN/moving_mea  (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_expand_BN/moving_var  (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_depthwise/depthwise_  (3, 3, 576, 1)
+MobileNetV2_CapsNet_Hybrid               block_13_depthwise_BN/gamma:0  (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_depthwise_BN/beta:0   (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_depthwise_BN/moving_  (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_depthwise_BN/moving_  (576,)
+MobileNetV2_CapsNet_Hybrid               block_13_project/kernel:0      (1, 1, 576, 160)
+MobileNetV2_CapsNet_Hybrid               block_13_project_BN/gamma:0    (160,)
+MobileNetV2_CapsNet_Hybrid               block_13_project_BN/beta:0     (160,)
+MobileNetV2_CapsNet_Hybrid               block_13_project_BN/moving_me  (160,)
+MobileNetV2_CapsNet_Hybrid               block_13_project_BN/moving_va  (160,)
+MobileNetV2_CapsNet_Hybrid               block_14_expand/kernel:0       (1, 1, 160, 960)
+MobileNetV2_CapsNet_Hybrid               block_14_expand_BN/gamma:0     (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_expand_BN/beta:0      (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_expand_BN/moving_mea  (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_expand_BN/moving_var  (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_depthwise/depthwise_  (3, 3, 960, 1)
+MobileNetV2_CapsNet_Hybrid               block_14_depthwise_BN/gamma:0  (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_depthwise_BN/beta:0   (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_depthwise_BN/moving_  (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_depthwise_BN/moving_  (960,)
+MobileNetV2_CapsNet_Hybrid               block_14_project/kernel:0      (1, 1, 960, 160)
+MobileNetV2_CapsNet_Hybrid               block_14_project_BN/gamma:0    (160,)
+MobileNetV2_CapsNet_Hybrid               block_14_project_BN/beta:0     (160,)
+MobileNetV2_CapsNet_Hybrid               block_14_project_BN/moving_me  (160,)
+MobileNetV2_CapsNet_Hybrid               block_14_project_BN/moving_va  (160,)
+MobileNetV2_CapsNet_Hybrid               block_15_expand/kernel:0       (1, 1, 160, 960)
+MobileNetV2_CapsNet_Hybrid               block_15_expand_BN/gamma:0     (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_expand_BN/beta:0      (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_expand_BN/moving_mea  (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_expand_BN/moving_var  (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_depthwise/depthwise_  (3, 3, 960, 1)
+MobileNetV2_CapsNet_Hybrid               block_15_depthwise_BN/gamma:0  (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_depthwise_BN/beta:0   (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_depthwise_BN/moving_  (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_depthwise_BN/moving_  (960,)
+MobileNetV2_CapsNet_Hybrid               block_15_project/kernel:0      (1, 1, 960, 160)
+MobileNetV2_CapsNet_Hybrid               block_15_project_BN/gamma:0    (160,)
+MobileNetV2_CapsNet_Hybrid               block_15_project_BN/beta:0     (160,)
+MobileNetV2_CapsNet_Hybrid               block_15_project_BN/moving_me  (160,)
+MobileNetV2_CapsNet_Hybrid               block_15_project_BN/moving_va  (160,)
+MobileNetV2_CapsNet_Hybrid               block_16_expand/kernel:0       (1, 1, 160, 960)
+MobileNetV2_CapsNet_Hybrid               block_16_expand_BN/gamma:0     (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_expand_BN/beta:0      (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_expand_BN/moving_mea  (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_expand_BN/moving_var  (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_depthwise/depthwise_  (3, 3, 960, 1)
+MobileNetV2_CapsNet_Hybrid               block_16_depthwise_BN/gamma:0  (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_depthwise_BN/beta:0   (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_depthwise_BN/moving_  (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_depthwise_BN/moving_  (960,)
+MobileNetV2_CapsNet_Hybrid               block_16_project/kernel:0      (1, 1, 960, 320)
+MobileNetV2_CapsNet_Hybrid               block_16_project_BN/gamma:0    (320,)
+MobileNetV2_CapsNet_Hybrid               block_16_project_BN/beta:0     (320,)
+MobileNetV2_CapsNet_Hybrid               block_16_project_BN/moving_me  (320,)
+MobileNetV2_CapsNet_Hybrid               block_16_project_BN/moving_va  (320,)
+MobileNetV2_CapsNet_Hybrid               Conv_1/kernel:0                (1, 1, 320, 1280)
+MobileNetV2_CapsNet_Hybrid               Conv_1_bn/gamma:0              (1280,)
+MobileNetV2_CapsNet_Hybrid               Conv_1_bn/beta:0               (1280,)
+MobileNetV2_CapsNet_Hybrid               Conv_1_bn/moving_mean:0        (1280,)
+MobileNetV2_CapsNet_Hybrid               Conv_1_bn/moving_variance:0    (1280,)
+MobileNetV2_CapsNet_Hybrid               prep_conv1/kernel:0            (3, 3, 1280, 64)
+MobileNetV2_CapsNet_Hybrid               prep_conv1/bias:0              (64,)
+MobileNetV2_CapsNet_Hybrid               prep_bn1/gamma:0               (64,)
+MobileNetV2_CapsNet_Hybrid               prep_bn1/beta:0                (64,)
+MobileNetV2_CapsNet_Hybrid               prep_bn1/moving_mean:0         (64,)
+MobileNetV2_CapsNet_Hybrid               prep_bn1/moving_variance:0     (64,)
+MobileNetV2_CapsNet_Hybrid               prep_conv2/kernel:0            (3, 3, 64, 32)
+MobileNetV2_CapsNet_Hybrid               prep_conv2/bias:0              (32,)
+MobileNetV2_CapsNet_Hybrid               prep_bn2/gamma:0               (32,)
+MobileNetV2_CapsNet_Hybrid               prep_bn2/beta:0                (32,)
+MobileNetV2_CapsNet_Hybrid               prep_bn2/moving_mean:0         (32,)
+MobileNetV2_CapsNet_Hybrid               prep_bn2/moving_variance:0     (32,)
+MobileNetV2_CapsNet_Hybrid               kernel:0                       (3, 3, 32, 64)
+MobileNetV2_CapsNet_Hybrid               bias:0                         (64,)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps_W:0      (6, 8, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps_b:0      (6, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps_gamma:0  (1,)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (8, 2, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (2, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (8, 2, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (2, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (8, 2, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (2, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (2, 8, 8)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (8,)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (8,)
+MobileNetV2_CapsNet_Hybrid               enhanced_digital_caps/enhance  (8,)
+MobileNetV2_CapsNet_Hybrid               emb_fc1/kernel:0               (54, 512)
+MobileNetV2_CapsNet_Hybrid               emb_fc1/bias:0                 (512,)
+MobileNetV2_CapsNet_Hybrid               emb_fc2/kernel:0               (512, 256)
+MobileNetV2_CapsNet_Hybrid               emb_fc2/bias:0                 (256,)
+MobileNetV2_CapsNet_Hybrid               emb_fc3/kernel:0               (256, 128)
+MobileNetV2_CapsNet_Hybrid               emb_fc3/bias:0                 (128,)
+MobileNetV2_CapsNet_Hybrid               final_embeddings/kernel:0      (128, 128)
+MobileNetV2_CapsNet_Hybrid               final_embeddings/bias:0        (128,)
+
+================================================================================
+✓ INSPECTION COMPLETE
+================================================================================
+
+📊 KEY TAKEAWAYS:
+  • Lightweight model - suitable for mobile/edge deployment
+
+💾 MODEL FORMAT:
+  • Format: Keras v3 (.keras)
+  • ✓ Recommended for TensorFlow 2.13+
+  • ✓ Better compatibility with modern TF features
+  • ✓ Single file, easier deployment
