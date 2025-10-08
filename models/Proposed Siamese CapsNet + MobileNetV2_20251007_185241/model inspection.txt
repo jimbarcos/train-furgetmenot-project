@@ -1,0 +1,121 @@
+Model loaded successfully (with safe_mode=False)
+
+================================================================================
+MODEL ARCHITECTURE ANALYSIS
+================================================================================
+
+------------------------------Parameter Statistics------------------------------
+Total Parameters:        5,643,785
+Trainable Parameters:    1,279,881 (22.7%)
+Non-trainable Parameters:4,363,904 (77.3%)
+
+----------------------------Model I/O Configuration-----------------------------
+Number of Inputs: 2
+  Input 1: input_anchor                   Shape: (None, 224, 224, 3)
+  Input 2: input_positive                 Shape: (None, 224, 224, 3)
+
+Number of Outputs: 1
+  Output 1: distance/Mean:0                Shape: (None, 1)  
+
+--------------------------------Layer Breakdown---------------------------------
+Total Layers: 5
+
+Layer Type Distribution:
+  InputLayer                     :   2 layers
+  Lambda                         :   2 layers
+  Functional                     :   1 layers
+
+--------------------------Detailed Layer Configuration--------------------------
+#    Layer Name                          Type                
+      Output Shape         Params
+--------------------------------------------------------------------------------
+0    input_anchor                        InputLayer          
+      [(None, 224, 224, 3  0
+1    input_positive                      InputLayer          
+      [(None, 224, 224, 3  0
+2    MobileNetV2_CapsNet_Hybrid          Functional          
+      [(None, 6, 8), (Non  5,643,785
+3    cosine_distance                     Lambda              
+      (None, 1)            0
+4    distance                            Lambda              
+      (None, 1)            0
+
+================================================================================
+CUSTOM COMPONENTS
+================================================================================
+
+Custom Layers Found (1):
+  • Functional                     : MobileNetV2_CapsNet_Hybrid
+
+Lambda Layers Found (2):
+  • cosine_distance
+  • distance
+
+⚠️  Note: Lambda layers may require custom_objects when loadiing the model
+
+================================================================================
+TRANSFER LEARNING ANALYSIS
+================================================================================
+
+Pre-trained Backbone(s) Detected:
+  • MOBILENET
+
+Layer Training Status:
+  Trainable Layers:        5 (100.0%)
+  Frozen Layers:           0 (0.0%)
+
+⚡ Full Fine-tuning: All layers are trainable
+
+================================================================================
+OPTIMIZER CONFIGURATION
+================================================================================
+⚠️  Model not compiled - no optimizer information available  
+
+================================================================================
+LOSS & METRICS CONFIGURATION
+================================================================================
+⚠️  Model not compiled - no loss/metrics information availablle
+
+================================================================================
+INFERENCE CHARACTERISTICS
+================================================================================
+
+Model Size:
+  Parameters:           5,643,785
+  Estimated Memory:     21.53 MB (float32)
+  Estimated Memory:     10.76 MB (float16/mixed precision)   
+
+================================================================================
+TRAINING HYPERPARAMETERS (from logs)
+================================================================================
+
+Training Configuration:
+  epochs                   : 50
+  batch_size               : 32
+  learning_rate            : 5e-05
+  patience                 : 7
+
+Model Metadata:
+  model_name               : Proposed Siamese CapsNet + MobileNetV2
+  session_id               : Proposed Siamese CapsNet + MobileNetV2_20251007_185241
+
+Training Progress:
+  Total Epochs Run:     11
+  Last Epoch:           11
+  Best Val AUC:         0.9795 (Epoch 4)
+  [18:52:28] Reloading data generators with current batch size...
+  [18:52:45] Batch sizes - Train: 32, Val: 16
+  [18:52:45] Training with learning rate: 5.00e-05
+
+================================================================================
+✓ INSPECTION COMPLETE
+================================================================================
+
+📊 KEY TAKEAWAYS:
+  • Medium-sized model - good balance of accuracy and speed  
+
+💾 MODEL FORMAT:
+  • Format: Keras v3 (.keras)
+  • ✓ Recommended for TensorFlow 2.13+
+  • ✓ Better compatibility with modern TF features
+  • ✓ Single file, easier deployment

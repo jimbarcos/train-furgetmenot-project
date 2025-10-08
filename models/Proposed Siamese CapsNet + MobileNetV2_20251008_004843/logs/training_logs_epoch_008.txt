@@ -1,0 +1,75 @@
+Training Logs - Epoch 8
+==================================================
+Timestamp: 2025-10-08 08:39:51
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251008_004843
+
+TIMING INFORMATION:
+Elapsed Time: 28259.11 seconds (470.99 minutes)
+Epoch Time: 4171.92 seconds
+ETA: 148360.34 seconds (2472.67 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 32
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.021298
+binary_accuracy_metric: 0.950050
+precision_metric: 0.950365
+recall_metric: 0.949700
+val_loss: 0.028331
+val_binary_accuracy_metric: 0.926700
+val_precision_metric: 0.901260
+val_recall_metric: 0.958400
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.931206
+val_recall: 0.934000
+val_f1: 0.932601
+val_accuracy: 0.932500
+val_auc: 0.967471
+val_balanced_accuracy: 0.932500
+threshold_score: 0.610000
+threshold: 0.358682
+best_val_f1: 0.944112
+best_val_auc: 0.980044
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.915547
+val_recall_at_fixed: 0.954000
+val_f1_at_fixed: 0.934378
+val_accuracy_at_fixed: 0.933000
+val_threshold_fixed: 0.500000
+val_ap: 0.956062
+val_recall_at_p80: 0.976000
+val_precision_at_r90: 0.945378
+val_raw_min: 0.000100
+val_raw_max: 0.999900
+val_raw_spread: 0.999800
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.931822
+val_local_best_threshold: 0.610000
+emb_std: 0.019238
+emb_spread: 0.178149
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 8):
+Best Training Loss: 0.021298
+Best Validation Loss: 0.028331
+Best Validation Accuracy: 0.944000
+Best Validation F1-Score: 0.944112
+Best Validation AUC: 0.980044

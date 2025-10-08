@@ -1,0 +1,80 @@
+Training Logs - Epoch 10
+==================================================
+Timestamp: 2025-10-07 04:54:15
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251006_234400
+
+TIMING INFORMATION:
+Elapsed Time: 18603.52 seconds (310.06 minutes)
+Epoch Time: 1841.00 seconds
+ETA: 74414.08 seconds (1240.23 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 32
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.013149
+binary_accuracy_metric: 0.970450
+precision_metric: 0.970780
+recall_metric: 0.970100
+val_loss: 0.020879
+val_binary_accuracy_metric: 0.936900
+val_precision_metric: 0.914123
+val_recall_metric: 0.964400
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.938431
+val_recall: 0.945000
+val_f1: 0.941704
+val_accuracy: 0.941500
+val_auc: 0.975548
+val_balanced_accuracy: 0.941500
+threshold_score: 0.630000
+threshold: 0.370395
+best_val_f1: 0.949355
+best_val_auc: 0.979113
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.917222
+val_recall_at_fixed: 0.964000
+val_f1_at_fixed: 0.940029
+val_accuracy_at_fixed: 0.938500
+val_threshold_fixed: 0.500000
+val_precision_at_frozen: 0.938431
+val_recall_at_frozen: 0.945000
+val_f1_at_frozen: 0.941704
+val_accuracy_at_frozen: 0.941500
+val_threshold_frozen: 0.630000
+val_ap: 0.965474
+val_recall_at_p80: 0.992000
+val_precision_at_r90: 0.953586
+val_raw_min: 0.000395
+val_raw_max: 0.999900
+val_raw_spread: 0.999505
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.939860
+val_local_best_threshold: 0.630000
+emb_std: 0.019231
+emb_spread: 0.170550
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 10):
+Best Training Loss: 0.013149
+Best Validation Loss: 0.020879
+Best Validation Accuracy: 0.949000
+Best Validation F1-Score: 0.949355
+Best Validation AUC: 0.979113

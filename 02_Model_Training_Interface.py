@@ -232,7 +232,7 @@ class SiameseCapsuleNetworkMobileNetV2:
     def __init__(self, input_shape=(224, 224, 3), embedding_dim=256, 
                  num_capsules=6, dim_capsules=8, routings=3, attention_heads=2,
                  use_attention=True, use_pearson_distance=False, optimize_speed=True,
-                 mobilenet_alpha=1.0, distance_type='cosine', loss_type='contrastive_enhanced',
+                 mobilenet_alpha=1.4, distance_type='cosine', loss_type='contrastive_enhanced',
                  label_positive_means_similar=True, learning_rate=5e-5,
                  use_capsule=True, capsule_auto_fallback=False):
         self.input_shape = input_shape
@@ -249,7 +249,7 @@ class SiameseCapsuleNetworkMobileNetV2:
             self.num_capsules = max(1, min(self.num_capsules, 10))
             self.dim_capsules = max(2, min(self.dim_capsules, 32))
             self.attention_heads = max(1, min(self.attention_heads, 8))
-            self.mobilenet_alpha = float(np.clip(self.mobilenet_alpha, 0.35, 1.0))
+            self.mobilenet_alpha = float(np.clip(self.mobilenet_alpha, 0.35, 1.4))
         
         self.routings = routings
         self.use_attention = use_attention
@@ -494,9 +494,7 @@ class SiameseCapsuleNetworkMobileNetV2:
                 alpha=self.mobilenet_alpha
             )
         
-        for layer in mobilenet_base.layers[:-20]:
-            layer.trainable = False
-        for layer in mobilenet_base.layers[-20:]:
+        for layer in mobilenet_base.layers:
             layer.trainable = True
         
         x = mobilenet_base.output
@@ -3588,8 +3586,8 @@ Total Epochs: {len(epochs)}"""
                 embedding_dim=128,  # INCREASED from 64 to 128 for better representation
                 num_capsules=6,      # INCREASED from 4 to 6 for more capsule capacity
                 dim_capsules=8,      # INCREASED from 4 to 8 for richer capsule features
-                routings=3,          # INCREASED from 2 to 3 for better routing
-                attention_heads=2,   # INCREASED from 1 to 2 for better attention
+                routings=4,          # INCREASED from 2 to 4 for better routing
+                attention_heads=4,   # INCREASED from 1 to 4 for better attention
                 use_attention=True,
                 use_pearson_distance=False,
                 # CRITICAL CHOICE: Distance Metric
@@ -3603,7 +3601,7 @@ Total Epochs: {len(epochs)}"""
                 label_positive_means_similar=True,
                 learning_rate=user_lr,  # Pass GUI learning rate
                 optimize_speed=True,
-                mobilenet_alpha=1.3,
+                mobilenet_alpha=1.4,
                 use_capsule=True,    # EXPLICIT: Ensure capsules are enabled
                 capsule_auto_fallback=False  # EXPLICIT: Disable auto-fallback
             )

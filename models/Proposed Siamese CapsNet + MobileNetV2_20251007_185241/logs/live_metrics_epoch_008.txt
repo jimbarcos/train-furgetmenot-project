@@ -1,0 +1,34 @@
+Live Metrics Display - Epoch 8
+==================================================
+Timestamp: 2025-10-07 23:09:59
+
+LIVE TRAINING METRICS
+
+Progress: Epoch 8/50
+Loss: 0.0221 | Val Loss: 0.0288
+
+CLASSIFICATION METRICS:
+Accuracy: 0.9554 | Val Accuracy: 0.9310
+Precision: 0.9451 | Val Precision: 0.9276
+Recall: 0.9670 | Val Recall: 0.9350
+F1-Score: 0.9559 | Val F1-Score: 0.9313
+AUC: 0.9696
+Threshold: 0.372
+
+TIMING:
+Elapsed: 257.1 min
+Last Epoch: 1897.3s
+ETA: 1349.9 min
+Learning Rate: 5.00e-05
+
+SYSTEM: CPU 38.5% | RAM 84.9%
+Recent Epochs (last 10)
+Ep  Loss   VLoss  Acc   VAcc  VPrec  VRec  VF1   VAUC  Thr
+01 0.7544 0.5188 0.813 0.911 0.911 0.911 0.911 0.965 0.44
+02 0.3636 0.2575 0.910 0.924 0.923 0.926 0.925 0.968 0.43
+03 0.1821 0.1380 0.935 0.942 0.934 0.950 0.942 0.976 0.43
+04 0.0987 0.0828 0.949 0.941 0.940 0.941 0.941 0.979 0.40
+05 0.0597 0.0563 0.953 0.941 0.942 0.940 0.941 0.978 0.37
+06 0.0398 0.0424 0.953 0.923 0.924 0.923 0.923 0.969 0.36
+07 0.0288 0.0336 0.954 0.936 0.935 0.937 0.936 0.974 0.37
+08 0.0221 0.0288 0.955 0.931 0.928 0.935 0.931 0.970 0.37

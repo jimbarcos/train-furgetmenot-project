@@ -1,0 +1,458 @@
+[23:41:36] Data generators loaded from CSV files
+[23:41:36] Welcome to Real-Time Model Training Interface!
+[23:41:36] Select a model and configure parameters to begin training.
+[23:43:43] Loading proposed model...
+[23:43:46] Proposed Siamese CapsNet + MobileNetV2 loaded successfully.
+[23:43:48] Reloading data generators with current batch size...
+[23:44:00] Data generators loaded from CSV files
+[23:44:00] Model directory created: models\Proposed Siamese CapsNet + MobileNetV2_20251006_234400
+[23:44:00] Starting training for 50 epochs...
+[23:44:00] Preparing model and data for training...
+[23:44:02] [RoutingEntropy] mean_norm_entropy=0.9964
+[23:44:04] Adaptive threshold mechanism enabled
+[23:44:04] Batch sizes - Train: 32, Val: 16
+[23:44:04] Data ready - Train: 625 batches, Val: 625 batches
+[23:44:04] Training with learning rate: 5.00e-05
+[23:44:04] Mixed precision training enabled
+[23:44:04] Starting training with 50 epochs...
+[23:44:04] Model parameters: 5,725,713
+[23:44:04] [Pre-Train Distances] n=16 min=0.01842 max=0.07775 mean=0.04602 std=0.01284 spread=0.05933
+[23:44:04] Models will be saved to: models\Proposed Siamese CapsNet + MobileNetV2_20251006_234400\models
+[23:44:04] Training started - Preparing data...
+[23:44:04] [ThresholdSync] Epoch 1: train threshold (dist) = 0.5000
+[23:44:04] Starting Epoch 1...
+[23:44:20]    Batch 0: Loss 1.7289
+[23:44:46]    Batch 20: Loss 1.7047
+[23:45:12]    Batch 40: Loss 1.6778
+[23:45:38]    Batch 60: Loss 1.6516
+[23:46:04]    Batch 80: Loss 1.6269
+[23:46:30]    Batch 100: Loss 1.6036
+[23:46:56]    Batch 120: Loss 1.5813
+[23:47:22]    Batch 140: Loss 1.5596
+[23:47:48]    Batch 160: Loss 1.5386
+[23:48:14]    Batch 180: Loss 1.5183
+[23:48:40]    Batch 200: Loss 1.4983
+[23:49:07]    Batch 220: Loss 1.4789
+[23:49:34]    Batch 240: Loss 1.4598
+[23:50:03]    Batch 260: Loss 1.4412
+[23:50:34]    Batch 280: Loss 1.4229
+[23:51:03]    Batch 300: Loss 1.4050
+[23:51:32]    Batch 320: Loss 1.3875
+[23:52:02]    Batch 340: Loss 1.3703
+[23:52:31]    Batch 360: Loss 1.3533
+[23:53:00]    Batch 380: Loss 1.3367
+[23:53:26]    Batch 400: Loss 1.3204
+[23:53:52]    Batch 420: Loss 1.3043
+[23:54:19]    Batch 440: Loss 1.2886
+[23:54:46]    Batch 460: Loss 1.2731
+[23:55:12]    Batch 480: Loss 1.2578
+[23:55:38]    Batch 500: Loss 1.2429
+[23:56:04]    Batch 520: Loss 1.2282
+[23:56:30]    Batch 540: Loss 1.2137
+[23:56:56]    Batch 560: Loss 1.1995
+[23:57:22]    Batch 580: Loss 1.1855
+[23:57:48]    Batch 600: Loss 1.1718
+[23:58:15]    Batch 620: Loss 1.1582
+[00:15:55] [Val Epoch 1] raw_min=0.0008 raw_max=0.9999 mode=dist->sim thr_score=0.560 thr_dist=0.476 f1=0.9116 auc=0.9663 acc=0.9115 edge_fb=0
+[00:15:58] Epoch 1/50: loss=1.1555, val_loss=0.7444, acc=0.8046, val_acc=0.9115, val_f1=0.9116, val_auc=0.9663, thr=0.476, precision=0.8112, recall=0.7940 [1911.3s/epoch, ETA: 1561.0min]
+[00:16:08] [ThresholdSync] Epoch 2: train threshold (dist) = 0.4762
+[00:16:08] Starting Epoch 2...
+[00:16:08]    Batch 0: Loss 0.7367
+[00:16:28]    Batch 20: Loss 0.7269
+[00:16:53]    Batch 40: Loss 0.7174
+[00:17:19]    Batch 60: Loss 0.7081
+[00:17:45]    Batch 80: Loss 0.6987
+[00:18:10]    Batch 100: Loss 0.6895
+[00:18:36]    Batch 120: Loss 0.6805
+[00:19:02]    Batch 140: Loss 0.6716
+[00:19:27]    Batch 160: Loss 0.6630
+[00:19:53]    Batch 180: Loss 0.6545
+[00:20:19]    Batch 200: Loss 0.6461
+[00:20:44]    Batch 220: Loss 0.6379
+[00:21:10]    Batch 240: Loss 0.6298
+[00:21:35]    Batch 260: Loss 0.6217
+[00:22:01]    Batch 280: Loss 0.6139
+[00:22:25]    Batch 300: Loss 0.6062
+[00:22:51]    Batch 320: Loss 0.5986
+[00:23:16]    Batch 340: Loss 0.5912
+[00:23:41]    Batch 360: Loss 0.5839
+[00:24:06]    Batch 380: Loss 0.5767
+[00:24:32]    Batch 400: Loss 0.5696
+[00:24:57]    Batch 420: Loss 0.5627
+[00:25:22]    Batch 440: Loss 0.5559
+[00:25:47]    Batch 460: Loss 0.5492
+[00:26:13]    Batch 480: Loss 0.5427
+[00:26:38]    Batch 500: Loss 0.5362
+[00:27:03]    Batch 520: Loss 0.5299
+[00:27:28]    Batch 540: Loss 0.5236
+[00:27:54]    Batch 560: Loss 0.5175
+[00:28:19]    Batch 580: Loss 0.5115
+[00:28:44]    Batch 600: Loss 0.5055
+[00:29:09]    Batch 620: Loss 0.4997
+[00:46:50] [Val Epoch 2] raw_min=0.0008 raw_max=0.9999 mode=dist->sim thr_score=0.500 thr_dist=0.486 f1=0.9306 auc=0.9728 acc=0.9305 edge_fb=0
+[00:46:54] Epoch 2/50: loss=0.4986, val_loss=0.3255, acc=0.9201, val_acc=0.9305, val_f1=0.9306, val_auc=0.9728, thr=0.486, precision=0.9315, recall=0.9068 [1849.9s/epoch, ETA: 1506.3min]
+[00:47:07] [ThresholdSync] Epoch 3: train threshold (dist) = 0.4858
+[00:47:07] Starting Epoch 3...
+[00:47:07]    Batch 0: Loss 0.3171
+[00:47:23]    Batch 20: Loss 0.3134
+[00:47:48]    Batch 40: Loss 0.3093
+[00:48:14]    Batch 60: Loss 0.3054
+[00:48:39]    Batch 80: Loss 0.3016
+[00:49:05]    Batch 100: Loss 0.2976
+[00:49:31]    Batch 120: Loss 0.2938
+[00:49:56]    Batch 140: Loss 0.2899
+[00:50:21]    Batch 160: Loss 0.2863
+[00:50:46]    Batch 180: Loss 0.2828
+[00:51:11]    Batch 200: Loss 0.2793
+[00:51:36]    Batch 220: Loss 0.2759
+[00:52:01]    Batch 240: Loss 0.2724
+[00:52:26]    Batch 260: Loss 0.2691
+[00:52:52]    Batch 280: Loss 0.2658
+[00:53:16]    Batch 300: Loss 0.2627
+[00:53:41]    Batch 320: Loss 0.2595
+[00:54:06]    Batch 340: Loss 0.2564
+[00:54:32]    Batch 360: Loss 0.2534
+[00:54:57]    Batch 380: Loss 0.2504
+[00:55:22]    Batch 400: Loss 0.2474
+[00:55:47]    Batch 420: Loss 0.2446
+[00:56:12]    Batch 440: Loss 0.2417
+[00:56:37]    Batch 460: Loss 0.2390
+[00:57:02]    Batch 480: Loss 0.2362
+[00:57:27]    Batch 500: Loss 0.2336
+[00:57:52]    Batch 520: Loss 0.2310
+[00:58:17]    Batch 540: Loss 0.2284
+[00:58:42]    Batch 560: Loss 0.2259
+[00:59:08]    Batch 580: Loss 0.2234
+[00:59:33]    Batch 600: Loss 0.2209
+[00:59:58]    Batch 620: Loss 0.2185
+[01:17:39] [Val Epoch 3] raw_min=0.0008 raw_max=0.9999 mode=dist->sim thr_score=0.560 thr_dist=0.468 f1=0.9371 auc=0.9784 acc=0.9370 edge_fb=0
+[01:17:44] Epoch 3/50: loss=0.2181, val_loss=0.1516, acc=0.9455, val_acc=0.9370, val_f1=0.9371, val_auc=0.9784, thr=0.468, precision=0.9498, recall=0.9406 [1843.9s/epoch, ETA: 1466.1min]
+[01:17:58] [ThresholdSync] Epoch 4: train threshold (dist) = 0.4677
+[01:17:58] Starting Epoch 4...
+[01:17:58]    Batch 0: Loss 0.1435
+[01:18:12]    Batch 20: Loss 0.1420
+[01:18:37]    Batch 40: Loss 0.1401
+[01:19:03]    Batch 60: Loss 0.1385
+[01:19:28]    Batch 80: Loss 0.1369
+[01:19:52]    Batch 100: Loss 0.1353
+[01:20:17]    Batch 120: Loss 0.1338
+[01:20:43]    Batch 140: Loss 0.1323
+[01:21:08]    Batch 160: Loss 0.1309
+[01:21:33]    Batch 180: Loss 0.1295
+[01:21:58]    Batch 200: Loss 0.1281
+[01:22:23]    Batch 220: Loss 0.1268
+[01:22:49]    Batch 240: Loss 0.1254
+[01:23:19]    Batch 260: Loss 0.1241
+[01:23:45]    Batch 280: Loss 0.1227
+[01:24:11]    Batch 300: Loss 0.1214
+[01:24:37]    Batch 320: Loss 0.1202
+[01:25:03]    Batch 340: Loss 0.1190
+[01:25:29]    Batch 360: Loss 0.1178
+[01:25:55]    Batch 380: Loss 0.1166
+[01:26:22]    Batch 400: Loss 0.1154
+[01:26:48]    Batch 420: Loss 0.1142
+[01:27:14]    Batch 440: Loss 0.1131
+[01:27:40]    Batch 460: Loss 0.1120
+[01:28:07]    Batch 480: Loss 0.1109
+[01:28:33]    Batch 500: Loss 0.1099
+[01:29:00]    Batch 520: Loss 0.1088
+[01:29:27]    Batch 540: Loss 0.1078
+[01:29:54]    Batch 560: Loss 0.1068
+[01:30:23]    Batch 580: Loss 0.1058
+[01:30:50]    Batch 600: Loss 0.1048
+[01:31:16]    Batch 620: Loss 0.1039
+[01:49:06] [Val Epoch 4] raw_min=0.0009 raw_max=0.9999 mode=dist->sim thr_score=0.610 thr_dist=0.437 f1=0.9360 auc=0.9759 acc=0.9360 edge_fb=0
+[01:49:13] Epoch 4/50: loss=0.1037, val_loss=0.0821, acc=0.9589, val_acc=0.9360, val_f1=0.9360, val_auc=0.9759, thr=0.437, precision=0.9558, recall=0.9622 [1881.9s/epoch, ETA: 1438.0min]
+[01:49:30] [ThresholdSync] Epoch 5: train threshold (dist) = 0.4368
+[01:49:30] Starting Epoch 5...
+[01:49:30]    Batch 0: Loss 0.0735
+[01:49:39]    Batch 20: Loss 0.0724
+[01:50:04]    Batch 40: Loss 0.0723
+[01:50:29]    Batch 60: Loss 0.0716
+[01:50:54]    Batch 80: Loss 0.0709
+[01:51:19]    Batch 100: Loss 0.0704
+[01:51:44]    Batch 120: Loss 0.0697
+[01:52:10]    Batch 140: Loss 0.0691
+[01:52:35]    Batch 160: Loss 0.0686
+[01:53:00]    Batch 180: Loss 0.0680
+[01:53:26]    Batch 200: Loss 0.0675
+[01:53:52]    Batch 220: Loss 0.0669
+[01:54:19]    Batch 240: Loss 0.0663
+[01:54:46]    Batch 260: Loss 0.0658
+[01:55:13]    Batch 280: Loss 0.0653
+[01:55:40]    Batch 300: Loss 0.0648
+[01:56:06]    Batch 320: Loss 0.0642
+[01:56:32]    Batch 340: Loss 0.0637
+[01:56:59]    Batch 360: Loss 0.0632
+[01:57:25]    Batch 380: Loss 0.0627
+[01:57:51]    Batch 400: Loss 0.0623
+[01:58:17]    Batch 420: Loss 0.0618
+[01:58:43]    Batch 440: Loss 0.0613
+[01:59:10]    Batch 460: Loss 0.0609
+[01:59:36]    Batch 480: Loss 0.0604
+[02:00:03]    Batch 500: Loss 0.0600
+[02:00:30]    Batch 520: Loss 0.0595
+[02:00:56]    Batch 540: Loss 0.0591
+[02:01:23]    Batch 560: Loss 0.0586
+[02:01:50]    Batch 580: Loss 0.0582
+[02:02:16]    Batch 600: Loss 0.0578
+[02:02:42]    Batch 620: Loss 0.0574
+[02:20:27] [Val Epoch 5] raw_min=0.0005 raw_max=0.9999 mode=dist->sim thr_score=0.590 thr_dist=0.426 f1=0.9494 auc=0.9791 acc=0.9490 edge_fb=0
+[02:20:33] Epoch 5/50: loss=0.0573, val_loss=0.0524, acc=0.9609, val_acc=0.9490, val_f1=0.9494, val_auc=0.9791, thr=0.426, precision=0.9572, recall=0.9650 [1877.9s/epoch, ETA: 1407.5min]
+[02:20:45] [ThresholdSync] Epoch 6: train threshold (dist) = 0.4262
+[02:20:45] Starting Epoch 6...
+[02:20:45]    Batch 0: Loss 0.0434
+[02:21:01]    Batch 20: Loss 0.0439
+[02:21:26]    Batch 40: Loss 0.0433
+[02:21:51]    Batch 60: Loss 0.0430
+[02:22:17]    Batch 80: Loss 0.0429
+[02:22:42]    Batch 100: Loss 0.0426
+[02:23:07]    Batch 120: Loss 0.0423
+[02:23:32]    Batch 140: Loss 0.0421
+[02:23:58]    Batch 160: Loss 0.0418
+[02:24:23]    Batch 180: Loss 0.0415
+[02:24:48]    Batch 200: Loss 0.0412
+[02:25:13]    Batch 220: Loss 0.0410
+[02:25:38]    Batch 240: Loss 0.0407
+[02:26:04]    Batch 260: Loss 0.0404
+[02:26:28]    Batch 280: Loss 0.0401
+[02:26:54]    Batch 300: Loss 0.0399
+[02:27:19]    Batch 320: Loss 0.0396
+[02:27:44]    Batch 340: Loss 0.0394
+[02:28:09]    Batch 360: Loss 0.0391
+[02:28:34]    Batch 380: Loss 0.0389
+[02:28:59]    Batch 400: Loss 0.0387
+[02:29:24]    Batch 420: Loss 0.0385
+[02:29:50]    Batch 440: Loss 0.0382
+[02:30:18]    Batch 460: Loss 0.0380
+[02:30:43]    Batch 480: Loss 0.0378
+[02:31:08]    Batch 500: Loss 0.0376
+[02:31:33]    Batch 520: Loss 0.0374
+[02:31:59]    Batch 540: Loss 0.0371
+[02:32:24]    Batch 560: Loss 0.0369
+[02:32:50]    Batch 580: Loss 0.0367
+[02:33:15]    Batch 600: Loss 0.0365
+[02:33:40]    Batch 620: Loss 0.0363
+[02:51:19] [Val Epoch 6] raw_min=0.0004 raw_max=0.9999 mode=dist->sim thr_score=0.580 thr_dist=0.424 f1=0.9350 auc=0.9746 acc=0.9350 edge_fb=0
+[02:51:27] Epoch 6/50: loss=0.0362, val_loss=0.0384, acc=0.9643, val_acc=0.9350, val_f1=0.9350, val_auc=0.9746, thr=0.424, precision=0.9588, recall=0.9704 [1845.9s/epoch, ETA: 1373.2min]
+[02:51:43] [ThresholdSync] Epoch 7: train threshold (dist) = 0.4238
+[02:51:43] Starting Epoch 7...
+[02:51:43]    Batch 0: Loss 0.0287
+[02:51:51]    Batch 20: Loss 0.0292
+[02:52:16]    Batch 40: Loss 0.0292
+[02:52:42]    Batch 60: Loss 0.0290
+[02:53:07]    Batch 80: Loss 0.0288
+[02:53:33]    Batch 100: Loss 0.0287
+[02:53:58]    Batch 120: Loss 0.0285
+[02:54:23]    Batch 140: Loss 0.0283
+[02:54:49]    Batch 160: Loss 0.0282
+[02:55:14]    Batch 180: Loss 0.0281
+[02:55:38]    Batch 200: Loss 0.0279
+[02:56:04]    Batch 220: Loss 0.0278
+[02:56:29]    Batch 240: Loss 0.0277
+[02:56:54]    Batch 260: Loss 0.0276
+[02:57:19]    Batch 280: Loss 0.0275
+[02:57:43]    Batch 300: Loss 0.0273
+[02:58:09]    Batch 320: Loss 0.0272
+[02:58:34]    Batch 340: Loss 0.0270
+[02:58:59]    Batch 360: Loss 0.0269
+[02:59:24]    Batch 380: Loss 0.0268
+[02:59:49]    Batch 400: Loss 0.0266
+[03:00:14]    Batch 420: Loss 0.0265
+[03:00:39]    Batch 440: Loss 0.0264
+[03:01:05]    Batch 460: Loss 0.0262
+[03:01:29]    Batch 480: Loss 0.0261
+[03:01:54]    Batch 500: Loss 0.0260
+[03:02:19]    Batch 520: Loss 0.0259
+[03:02:44]    Batch 540: Loss 0.0258
+[03:03:09]    Batch 560: Loss 0.0257
+[03:03:35]    Batch 580: Loss 0.0255
+[03:04:00]    Batch 600: Loss 0.0254
+[03:04:25]    Batch 620: Loss 0.0253
+[03:22:00] [Val Epoch 7] raw_min=0.0001 raw_max=0.9999 mode=dist->sim thr_score=0.580 thr_dist=0.422 f1=0.9423 auc=0.9789 acc=0.9420 edge_fb=0
+[03:22:05] Epoch 7/50: loss=0.0253, val_loss=0.0298, acc=0.9654, val_acc=0.9420, val_f1=0.9423, val_auc=0.9789, thr=0.422, precision=0.9614, recall=0.9697 [1837.2s/epoch, ETA: 1338.7min]
+[03:22:20] [ThresholdSync] Epoch 8: train threshold (dist) = 0.4223
+[03:22:20] Starting Epoch 8...
+[03:22:20]    Batch 0: Loss 0.0203
+[03:22:31]    Batch 20: Loss 0.0208
+[03:22:56]    Batch 40: Loss 0.0210
+[03:23:21]    Batch 60: Loss 0.0208
+[03:23:46]    Batch 80: Loss 0.0208
+[03:24:12]    Batch 100: Loss 0.0207
+[03:24:37]    Batch 120: Loss 0.0207
+[03:25:02]    Batch 140: Loss 0.0206
+[03:25:27]    Batch 160: Loss 0.0205
+[03:25:52]    Batch 180: Loss 0.0205
+[03:26:17]    Batch 200: Loss 0.0205
+[03:26:42]    Batch 220: Loss 0.0204
+[03:27:07]    Batch 240: Loss 0.0203
+[03:27:32]    Batch 260: Loss 0.0203
+[03:27:57]    Batch 280: Loss 0.0202
+[03:28:22]    Batch 300: Loss 0.0202
+[03:28:47]    Batch 320: Loss 0.0201
+[03:29:12]    Batch 340: Loss 0.0200
+[03:29:38]    Batch 360: Loss 0.0199
+[03:30:05]    Batch 380: Loss 0.0198
+[03:30:31]    Batch 400: Loss 0.0198
+[03:30:56]    Batch 420: Loss 0.0197
+[03:31:21]    Batch 440: Loss 0.0196
+[03:31:46]    Batch 460: Loss 0.0196
+[03:32:11]    Batch 480: Loss 0.0195
+[03:32:36]    Batch 500: Loss 0.0194
+[03:33:01]    Batch 520: Loss 0.0193
+[03:33:26]    Batch 540: Loss 0.0193
+[03:33:51]    Batch 560: Loss 0.0192
+[03:34:16]    Batch 580: Loss 0.0191
+[03:34:41]    Batch 600: Loss 0.0191
+[03:35:06]    Batch 620: Loss 0.0190
+[03:52:44] [Val Epoch 8] raw_min=0.0004 raw_max=0.9999 mode=dist->sim thr_score=0.640 thr_dist=0.397 f1=0.9385 auc=0.9756 acc=0.9385 edge_fb=0
+[03:52:51] Epoch 8/50: loss=0.0190, val_loss=0.0251, acc=0.9674, val_acc=0.9385, val_f1=0.9385, val_auc=0.9756, thr=0.397, precision=0.9659, recall=0.9689 [1842.0s/epoch, ETA: 1305.5min]
+[03:53:08] [ThresholdSync] Epoch 9: train threshold (dist) = 0.3975
+[03:53:08] Starting Epoch 9...
+[03:53:08]    Batch 0: Loss 0.0161
+[03:53:16]    Batch 20: Loss 0.0163
+[03:53:41]    Batch 40: Loss 0.0164
+[03:54:06]    Batch 60: Loss 0.0164
+[03:54:31]    Batch 80: Loss 0.0164
+[03:54:56]    Batch 100: Loss 0.0163
+[03:55:21]    Batch 120: Loss 0.0162
+[03:55:46]    Batch 140: Loss 0.0162
+[03:56:11]    Batch 160: Loss 0.0162
+[03:56:37]    Batch 180: Loss 0.0161
+[03:57:02]    Batch 200: Loss 0.0161
+[03:57:27]    Batch 220: Loss 0.0161
+[03:57:52]    Batch 240: Loss 0.0160
+[03:58:17]    Batch 260: Loss 0.0159
+[03:58:42]    Batch 280: Loss 0.0159
+[03:59:07]    Batch 300: Loss 0.0159
+[03:59:32]    Batch 320: Loss 0.0158
+[03:59:57]    Batch 340: Loss 0.0158
+[04:00:22]    Batch 360: Loss 0.0158
+[04:00:47]    Batch 380: Loss 0.0157
+[04:01:12]    Batch 400: Loss 0.0157
+[04:01:37]    Batch 420: Loss 0.0157
+[04:02:03]    Batch 440: Loss 0.0156
+[04:02:28]    Batch 460: Loss 0.0156
+[04:02:53]    Batch 480: Loss 0.0155
+[04:03:18]    Batch 500: Loss 0.0155
+[04:03:43]    Batch 520: Loss 0.0155
+[04:04:08]    Batch 540: Loss 0.0154
+[04:04:33]    Batch 560: Loss 0.0154
+[04:04:58]    Batch 580: Loss 0.0154
+[04:05:23]    Batch 600: Loss 0.0153
+[04:05:48]    Batch 620: Loss 0.0153
+[04:23:24] [Val Epoch 9] raw_min=0.0002 raw_max=0.9999 mode=dist->sim thr_score=0.670 thr_dist=0.371 f1=0.9281 auc=0.9726 acc=0.9280 edge_fb=0
+[04:23:30] Epoch 9/50: loss=0.0153, val_loss=0.0229, acc=0.9682, val_acc=0.9280, val_f1=0.9281, val_auc=0.9726, thr=0.371, precision=0.9675, recall=0.9689 [1836.8s/epoch, ETA: 1272.5min]
+[04:23:45] [ThresholdSync] Epoch 10: train threshold (dist) = 0.3705
+[04:23:45] Starting Epoch 10...
+[04:23:45]    Batch 0: Loss 0.0156
+[04:23:56]    Batch 20: Loss 0.0137
+[04:24:21]    Batch 40: Loss 0.0137
+[04:24:46]    Batch 60: Loss 0.0137
+[04:25:11]    Batch 80: Loss 0.0136
+[04:25:36]    Batch 100: Loss 0.0136
+[04:26:01]    Batch 120: Loss 0.0137
+[04:26:26]    Batch 140: Loss 0.0137
+[04:26:51]    Batch 160: Loss 0.0137
+[04:27:17]    Batch 180: Loss 0.0137
+[04:27:42]    Batch 200: Loss 0.0137
+[04:28:08]    Batch 220: Loss 0.0136
+[04:28:34]    Batch 240: Loss 0.0136
+[04:29:00]    Batch 260: Loss 0.0135
+[04:29:25]    Batch 280: Loss 0.0135
+[04:29:50]    Batch 300: Loss 0.0135
+[04:30:15]    Batch 320: Loss 0.0134
+[04:30:40]    Batch 340: Loss 0.0134
+[04:31:05]    Batch 360: Loss 0.0134
+[04:31:30]    Batch 380: Loss 0.0134
+[04:31:55]    Batch 400: Loss 0.0133
+[04:32:21]    Batch 420: Loss 0.0133
+[04:32:45]    Batch 440: Loss 0.0133
+[04:33:11]    Batch 460: Loss 0.0133
+[04:33:36]    Batch 480: Loss 0.0133
+[04:34:01]    Batch 500: Loss 0.0133
+[04:34:26]    Batch 520: Loss 0.0132
+[04:34:51]    Batch 540: Loss 0.0132
+[04:35:16]    Batch 560: Loss 0.0132
+[04:35:41]    Batch 580: Loss 0.0132
+[04:36:06]    Batch 600: Loss 0.0132
+[04:36:31]    Batch 620: Loss 0.0131
+[04:54:08] [Val Epoch 10] raw_min=0.0004 raw_max=0.9999 mode=dist->sim thr_score=0.630 thr_dist=0.370 f1=0.9417 auc=0.9755 acc=0.9415 edge_fb=0
+[04:54:15] Epoch 10/50: loss=0.0131, val_loss=0.0209, acc=0.9704, val_acc=0.9415, val_f1=0.9417, val_auc=0.9755, thr=0.370, precision=0.9708, recall=0.9701 [1841.0s/epoch, ETA: 1240.2min]
+[04:54:30] [ThresholdSync] Epoch 11: train threshold (dist) = 0.3704
+[04:54:30] Starting Epoch 11...
+[04:54:30]    Batch 0: Loss 0.0107
+[04:54:39]    Batch 20: Loss 0.0120
+[04:55:04]    Batch 40: Loss 0.0121
+[04:55:29]    Batch 60: Loss 0.0120
+[04:55:54]    Batch 80: Loss 0.0120
+[04:56:19]    Batch 100: Loss 0.0121
+[04:56:44]    Batch 120: Loss 0.0121
+[04:57:10]    Batch 140: Loss 0.0121
+[04:57:35]    Batch 160: Loss 0.0121
+[04:58:00]    Batch 180: Loss 0.0121
+[04:58:26]    Batch 200: Loss 0.0121
+[04:58:51]    Batch 220: Loss 0.0121
+[04:59:16]    Batch 240: Loss 0.0121
+[04:59:41]    Batch 260: Loss 0.0120
+[05:00:07]    Batch 280: Loss 0.0120
+[05:00:32]    Batch 300: Loss 0.0120
+[05:00:57]    Batch 320: Loss 0.0120
+[05:01:22]    Batch 340: Loss 0.0120
+[05:01:47]    Batch 360: Loss 0.0119
+[05:02:12]    Batch 380: Loss 0.0119
+[05:02:37]    Batch 400: Loss 0.0119
+[05:03:02]    Batch 420: Loss 0.0119
+[05:03:27]    Batch 440: Loss 0.0119
+[05:03:52]    Batch 460: Loss 0.0119
+[05:04:17]    Batch 480: Loss 0.0119
+[05:04:42]    Batch 500: Loss 0.0119
+[05:05:07]    Batch 520: Loss 0.0119
+[05:05:32]    Batch 540: Loss 0.0119
+[05:05:57]    Batch 560: Loss 0.0119
+[05:06:22]    Batch 580: Loss 0.0119
+[05:06:47]    Batch 600: Loss 0.0119
+[05:07:12]    Batch 620: Loss 0.0118
+[05:24:44] [Val Epoch 11] raw_min=0.0007 raw_max=0.9999 mode=dist->sim thr_score=0.640 thr_dist=0.366 f1=0.9310 auc=0.9729 acc=0.9310 edge_fb=0
+[05:24:51] Epoch 11/50: loss=0.0118, val_loss=0.0205, acc=0.9697, val_acc=0.9310, val_f1=0.9310, val_auc=0.9729, thr=0.366, precision=0.9723, recall=0.9669 [1833.6s/epoch, ETA: 1207.8min]
+[05:25:06] [ThresholdSync] Epoch 12: train threshold (dist) = 0.3664
+[05:25:06] Starting Epoch 12...
+[05:25:06]    Batch 0: Loss 0.0108
+[05:25:16]    Batch 20: Loss 0.0110
+[05:25:40]    Batch 40: Loss 0.0110
+[05:26:05]    Batch 60: Loss 0.0111
+[05:26:30]    Batch 80: Loss 0.0112
+[05:26:55]    Batch 100: Loss 0.0112
+[05:27:21]    Batch 120: Loss 0.0112
+[05:27:46]    Batch 140: Loss 0.0111
+[05:28:11]    Batch 160: Loss 0.0111
+[05:28:36]    Batch 180: Loss 0.0111
+[05:29:01]    Batch 200: Loss 0.0111
+[05:29:26]    Batch 220: Loss 0.0111
+[05:29:52]    Batch 240: Loss 0.0111
+[05:30:19]    Batch 260: Loss 0.0111
+[05:30:44]    Batch 280: Loss 0.0111
+[05:31:09]    Batch 300: Loss 0.0111
+[05:31:34]    Batch 320: Loss 0.0111
+[05:31:59]    Batch 340: Loss 0.0111
+[05:32:24]    Batch 360: Loss 0.0111
+[05:32:49]    Batch 380: Loss 0.0111
+[05:33:14]    Batch 400: Loss 0.0111
+[05:33:39]    Batch 420: Loss 0.0111
+[05:34:05]    Batch 440: Loss 0.0111
+[05:34:30]    Batch 460: Loss 0.0111
+[05:34:55]    Batch 480: Loss 0.0111
+[05:35:20]    Batch 500: Loss 0.0111
+[05:35:45]    Batch 520: Loss 0.0111
+[05:36:09]    Batch 540: Loss 0.0111
+[05:36:35]    Batch 560: Loss 0.0111
+[05:37:00]    Batch 580: Loss 0.0111
+[05:37:25]    Batch 600: Loss 0.0111
+[05:37:50]    Batch 620: Loss 0.0110
+[05:55:20] [Val Epoch 12] raw_min=0.0005 raw_max=0.9999 mode=dist->sim thr_score=0.600 thr_dist=0.380 f1=0.9353 auc=0.9746 acc=0.9350 edge_fb=0
+[05:55:26] Epoch 12/50: loss=0.0110, val_loss=0.0203, acc=0.9724, val_acc=0.9350, val_f1=0.9353, val_auc=0.9746, thr=0.380, precision=0.9738, recall=0.9708 [1833.8s/epoch, ETA: 1175.7min]
+[05:55:34] Training completed in 371.3 minutes
+[05:55:34] Loaded best checkpoint before final save: best_model_epoch_05_auc_0.9791_vloss_0.0524_vf1_0.9494.weights.h5 (val_auc=0.9791)
+[05:55:46] Final model saved to: models\Proposed Siamese CapsNet + MobileNetV2_20251006_234400\models\final_best_model, models\Proposed Siamese CapsNet + MobileNetV2_20251006_234400\models\final_best_model.keras and weights models\Proposed Siamese CapsNet + MobileNetV2_20251006_234400\models\final_best_model.weights.h5
+[05:55:46] Training completed successfully.
+

@@ -1,0 +1,75 @@
+Training Logs - Epoch 2
+==================================================
+Timestamp: 2025-10-06 18:39:29
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251006_172901
+
+TIMING INFORMATION:
+Elapsed Time: 4219.00 seconds (70.32 minutes)
+Epoch Time: 2088.95 seconds
+ETA: 101256.04 seconds (1687.60 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 32
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.340295
+binary_accuracy_metric: 0.910850
+precision_metric: 0.917998
+recall_metric: 0.902300
+val_loss: 0.232055
+val_binary_accuracy_metric: 0.917200
+val_precision_metric: 0.908699
+val_recall_metric: 0.927600
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.916418
+val_recall: 0.921000
+val_f1: 0.918703
+val_accuracy: 0.918500
+val_auc: 0.964195
+val_balanced_accuracy: 0.918500
+threshold_score: 0.510000
+threshold: 0.467374
+best_val_f1: 0.918703
+best_val_auc: 0.964694
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.913861
+val_recall_at_fixed: 0.923000
+val_f1_at_fixed: 0.918408
+val_accuracy_at_fixed: 0.918000
+val_threshold_fixed: 0.500000
+val_ap: 0.959198
+val_recall_at_p80: 0.976000
+val_precision_at_r90: 0.929752
+val_raw_min: 0.000542
+val_raw_max: 0.999900
+val_raw_spread: 0.999358
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.917446
+val_local_best_threshold: 0.510000
+emb_std: 0.031254
+emb_spread: 0.233037
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 2):
+Best Training Loss: 0.340295
+Best Validation Loss: 0.232055
+Best Validation Accuracy: 0.918500
+Best Validation F1-Score: 0.918703
+Best Validation AUC: 0.964694

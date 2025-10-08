@@ -1,0 +1,80 @@
+Training Logs - Epoch 12
+==================================================
+Timestamp: 2025-10-08 12:31:25
+Model: Proposed Siamese CapsNet + MobileNetV2
+Session ID: Proposed Siamese CapsNet + MobileNetV2_20251008_004843
+
+TIMING INFORMATION:
+Elapsed Time: 42153.17 seconds (702.55 minutes)
+Epoch Time: 3470.20 seconds
+ETA: 133485.03 seconds (2224.75 minutes)
+
+TRAINING PARAMETERS:
+Epochs Total: 50
+Batch Size: 32
+Learning Rate: 5e-05
+Patience: 7
+
+EPOCH METRICS:
+loss: 0.011685
+binary_accuracy_metric: 0.956900
+precision_metric: 0.962730
+recall_metric: 0.950600
+val_loss: 0.021700
+val_binary_accuracy_metric: 0.914700
+val_precision_metric: 0.892485
+val_recall_metric: 0.943000
+validation_callback_error: 0.000000
+val_pos_total: 5000.000000
+val_neg_total: 5000.000000
+val_balanced_applied: 1.000000
+val_pos_used: 1000.000000
+val_neg_used: 1000.000000
+threshold_edge_fallback: 0.000000
+low_auc_mode: 0.000000
+recall_floor: 0.400000
+recall_floor_applied: 0.000000
+threshold_setter_used: 1.000000
+threshold_var_assigned: 1.000000
+val_precision: 0.923000
+val_recall: 0.923000
+val_f1: 0.923000
+val_accuracy: 0.923000
+val_auc: 0.968913
+val_balanced_accuracy: 0.923000
+threshold_score: 0.640000
+threshold: 0.350776
+best_val_f1: 0.944112
+best_val_auc: 0.980044
+score_is_similarity: 1.000000
+threshold_method: 0.000000
+val_precision_at_fixed: 0.901235
+val_recall_at_fixed: 0.949000
+val_f1_at_fixed: 0.924501
+val_accuracy_at_fixed: 0.922500
+val_threshold_fixed: 0.500000
+val_precision_at_frozen: 0.926188
+val_recall_at_frozen: 0.916000
+val_f1_at_frozen: 0.921066
+val_accuracy_at_frozen: 0.921500
+val_threshold_frozen: 0.670000
+val_ap: 0.959226
+val_recall_at_p80: 0.977000
+val_precision_at_r90: 0.932642
+val_raw_min: 0.000110
+val_raw_max: 0.999900
+val_raw_spread: 0.999790
+val_score_mode: 1.000000
+val_sample_count: 2000.000000
+val_local_best_f1: 0.923000
+val_local_best_threshold: 0.640000
+emb_std: 0.019249
+emb_spread: 0.155458
+lr: 4.999999873689376e-05
+
+HISTORICAL SUMMARY (up to epoch 12):
+Best Training Loss: 0.011685
+Best Validation Loss: 0.021700
+Best Validation Accuracy: 0.944000
+Best Validation F1-Score: 0.944112
+Best Validation AUC: 0.980044
